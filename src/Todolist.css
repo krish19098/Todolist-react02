@@ -1,0 +1,138 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f6f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+input,
+button,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #000407;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background-color: #25a8ff;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+button:hover {
+  background-color: #004776;
+}
+
+.filter {
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 0cm;
+}
+
+.filter select {
+  padding: 12px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.todo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.todo-item {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.todo-details {
+  padding: 20px;
+  font-size: larger;
+}
+
+.todo-details h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.todo-details p {
+  margin: 5px 0;
+  color: #555555;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dddddd;
+}
+
+.todo-actions p {
+  margin: 0;
+  flex: 1;
+  font: size 17px;
+  color: #666666;
+  text-wrap:inherit;
+}
+
+.todo-actions button {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.todo-actions button:last-child {
+  margin-right: 0;
+}
+
+.todo-actions button:hover {
+  filter: brightness(90%);
+}
+
+.todo-actions button.not-completed {
+  background-color: #e74c3c;
+  text-wrap:justify;
+  font-size: large;
+}
+
+.todo-actions button.completed {
+  background-color: #2ecc71;
+  font-size: larger;
+}
